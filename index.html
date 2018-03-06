@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/waypoints.css" rel="stylesheet" />
+    <script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="js/waypoints.js" type="text/javascript"></script>
+
+    <meta name="author" content="AINC">
+
+
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+                $('div').removeClass('overlay');
+            } else {
+                $('nav').removeClass('black');
+                $('div.inner>div').addClass('overlay');
+            }
+        })
+
+    </script>
+
+
+    <title>Arihant Notifier!</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">Arihant Hostel</div>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+
+    <section class="intro">
+        <div class="inner">
+            <div class="overlay" id="over">
+                <div class="content">
+                    <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay="0s">
+                        <h1> Welcome To Arihant Notifier</h1>
+                    </section><br>
+                    <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".1s">
+                        <a href="#" class="btno" style="text-decoration: none">Go to Notifications!</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+</body>
+
+</html>

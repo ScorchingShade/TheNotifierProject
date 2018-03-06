@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url('background1.jpg') no-repeat 50% 50%;
+    display: table;
+    background-color: #e5e5e5;
+    top: 0;
+    background-size: cover;
+    transition: .3s;
+}
+
+.intro .overlay {
+    height: 26%;
+    transition: .3s;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+    transition: .3s;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    transition: .3s;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 300%;
+    color: oldlace;
+    transition: .3s;
+    text-shadow: 12px 12px 300px #000;
+    font-weight: bolder;
+}
+
+.btno {
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: chartreuse;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btno:hover {
+    color: yellow;
+    transition: .3s;
+
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+nav.black{
+    background: rgba(0,0,0,0.4);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: chartreuse;
+    transition: .3s;
+}
+
+nav.black .logo{
+    color: #fff;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 80px;
+    color: #151515;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: .3s;
+}
+
+nav.black ul li a:focus {
+    outline: none;
+}
+
+nav ul li a.active{
+    background: chartreuse;
+    border-radius: 6px;
+}
+
+
+!--media Queries--! 
+@media screen and (max-width: 900px) {
+    .content h1 {
+        font-size: 180%;
+    }
+    .btno {
+        font-size: 100%;
+        padding: 7px 15px;
+    }
+    .intro .overlay {
+        height: 26%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .content h1 {
+        font-size: 200%;
+    }
+    .btno {
+        font-size: 90%;
+        padding: 7px 15px;
+    }
+    .intro .overlay {
+        height: 25%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .content h1 {
+        font-size: 180%;
+    }
+    .btno {
+        font-size: 80%;
+        padding: 7px 15px;
+    }
+    .intro .overlay {
+        height: 22%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+}
+
