@@ -34,13 +34,9 @@
         
         
         $(window).on('scroll', function() {
-           
-            
             if ($(window).scrollTop()) {
                 $('nav').addClass('blue');
                 $('div').removeClass('overlay');
-                $('ul.ul-elements li').addClass("blue");
-                  
             } else {
                 $('nav').removeClass('blue');
                 $('div.inner>div').addClass('overlay');
